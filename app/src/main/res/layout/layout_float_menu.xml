@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="28dp"
+        android:drawableRight="@drawable/menu"
+        android:background="@null"
+        android:onClick="btnMenu" />
+
+   <RelativeLayout
+       android:id="@+id/pop_menu"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/button1"
+       android:layout_alignRight="@+id/button1"
+       android:layout_marginBottom="10dp"
+       android:layout_marginRight="10dp" >
+
+       <Button
+           android:id="@+id/button5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/button2"
+           android:layout_marginTop="10dp"
+           android:background="@null"
+           android:drawableRight="@drawable/menu_camera"
+           android:onClick="btnCamera"
+           android:text="相机 "
+           android:textColor="#FFFFFFFF"
+           android:textStyle="bold" />
+
+       <Button
+           android:id="@+id/button4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/button5"
+           android:layout_marginTop="10dp"
+           android:background="@null"
+           android:drawableRight="@drawable/menu_photo"
+           android:onClick="btnPhoto"
+           android:text="相册 "
+           android:textColor="#FFFFFFFF"
+           android:textStyle="bold" />
+
+       <Button
+           android:id="@+id/button3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/button4"
+           android:layout_marginTop="10dp"
+           android:background="@null"
+           android:drawableRight="@drawable/menu_lib"
+           android:onClick="btnLib"
+           android:text="常用 "
+           android:textColor="#FFFFFFFF"
+           android:textStyle="bold" />
+   </RelativeLayout>
+
+</RelativeLayout>

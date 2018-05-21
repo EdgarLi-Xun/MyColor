@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="#FFC0C0C0" >
+    </RelativeLayout>
+
+   <RelativeLayout
+        android:id="@+id/card_backgroung"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FF00F0F0"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/text_color_hex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="#FFFFFF"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/text_color_rgb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_color_hex"
+            android:layout_below="@+id/text_color_hex"
+            android:text="RGB:15,128,123"
+            android:textColor="#FFA0A0A0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/btn_copy"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/text_rgb"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/copy" />
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/btn_copy"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/del" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignRight="@+id/btn_del"
+            android:layout_alignTop="@+id/text_color_hex"
+            android:background="@drawable/share" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
